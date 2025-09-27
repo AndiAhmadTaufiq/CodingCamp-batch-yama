@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Andi Ahmad Taufiq — Mahasiswa Semester 7</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Use SRI for security, update the integrity hash if the script changes -->
+  <script src="https://smtpjs.com/v3/smtp.js"
+          integrity="sha384-+2VZk6wQwQw1n5v8QwQw1n5v8QwQw1n5v8QwQw1n5v8QwQw1n5v8QwQw1n5v8QwQw1n5v8"
+          crossorigin="anonymous"></script>
+  <!-- Replace the integrity value above with the actual SRI hash for smtp.js -->
+
 </head>
 <body>
-    
+  <header class="site-header">
+    <div class="container nav">
+      <a href="./" class="brand">Andi<span class="accent">.dev</span></a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#message">Message Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-copy">
+        <h1 id="welcomeTitle">Halo <span id="welcomeName">Guest</span> 👋</h1>
+        <p>Saya <b>Andi Ahmad Taufiq</b>, seorang Mahasiswa di Universitas Negeri Makassar. Saat ini saya terus belajar pengembangan web (HTML, CSS, JavaScript) serta bahasa pemrograman lain seperti Python dan Java untuk mobile.</p>
+
+        <div class="name-capture">
+      <!-- ganti URL gambar jika ingin -->
+      <div class="hero-photo" role="img" aria-label="Foto banner"></div>
+    </div>
+  </section>
+  <section>
+      <h2 class="title">Tech Stack yang Dipelajari</h2>
+      <ul class="stack">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java (Mobile)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MESSAGE US -->
+  <section id="message" class="section alt">
+    <div class="container">
+      <h2 class="title">Message Us</h2>
+      <div class="form-split">
+        <form id="messageForm" class="form">
+          <label>Nama
+            <input name="name" type="text" required placeholder="Nama lengkap">
+          </label>
+          <label>Email
+            <input name="email" type="email" required placeholder="nama@email.com">
+          </label>
+          <label>Pesan
+            <textarea name="message" rows="4" required placeholder="Tulis pesan untuk Andi"></textarea>
+          </label>
+          <button type="submit">Kirim</button>
+        </form>
+
+        <aside class="result">
+          <p><b>Current time:</b> <span id="time"></span></p>
+          <hr>
+          <p><b>Nama:</b> <span id="r_name">—</span></p>
+          <p><b>Email:</b> <span id="r_email">—</span></p>
+          <p><b>Pesan:</b> <span id="r_message">—</span></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container small">© <span id="year"></span> Andi Ahmad Taufiq • Makassar, 4 Mei 2004</div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
